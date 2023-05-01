@@ -1,0 +1,44 @@
+@mixin mixinContainer(){
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+@mixin flex(){
+    display: flex;
+    justify-content: start;
+    align-items: center
+}
+
+.flex{
+    @include flex();
+    &.between{
+        justify-content: space-between;
+    }
+}
+.container {
+    @include mixinContainer();
+}
+
+@mixin btn($border: none, $pad: 8px 20px, $bacColor:#FFC301, $color: #fff, $borderRad: 5px, $fontSize: 20px, $fontWeight: 700, $boxShadow: 15px 15px 35px rgba(226, 142, 15, 0.18) ) {
+    border: $border;
+    padding: $pad;
+    background-color: $bacColor;
+    color: $color;
+    border-radius: $borderRad;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    box-shadow: $boxShadow
+}
+
+
+.btn {
+    @include btn;
+    &.dark {
+      border:1px solid #FF6533;
+      background-color: rgba(0, 0, 0, 0.9);
+      
+    }
+}
+
