@@ -10,6 +10,9 @@ img{
 button{
     cursor: pointer;
 }
+p{
+    line-height: 1.5rem;
+}
 header{
     background-image: url(../imiges/header-bck.svg);
     background-position: center;
@@ -211,23 +214,18 @@ header{
 
 }
 
-.blog__holder{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-   
-    
-    .blog__heading{
-        width: 680px;
-        margin-left: 50px;
-        .title{
-            margin-bottom: 20px;
-        }
-        .blog__text {
-            margin-bottom: 30px;
-        }
+
+.blog__heading{
+    width: 680px;
+    margin-left: 50px;
+    .title{
+        margin-bottom: 20px;
+    }
+    .blog__text {
+        margin-bottom: 30px;
     }
 }
+
 
 .blog__button{
     background-color: #5aadd7;
